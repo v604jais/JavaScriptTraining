@@ -17,7 +17,18 @@
       }
         
         car.autopilot();
-        
+
+        function Books(BookName,pages,author){
+            this.BookName = BookName;
+            this.pages = pages;
+            this.author = author;
+            this.print = function()
+            {
+                document.write(this.BookName+"<br>"+this.pages+"<br>"+this.author);
+            }
+        }
+         var b1 = new Books("RAMAYAN",165,"Valmiki");
+             b1.print();
     </script>
 </head>
     <body>
