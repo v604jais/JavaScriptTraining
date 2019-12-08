@@ -8,9 +8,11 @@
       var username=document.getElementById("uname");
       var passwo=document.getElementById("pass");
 
+
         if (username.value.trim() =="" || passwo.value.trim() ==""){
           
-          alert(" No blank Value is allowed ");
+         // alert(" No blank Value is allowed ");
+         document.getElementById("label1").style.visibility="visible";
         return false;
         }
         {
@@ -23,8 +25,9 @@
     </script>
     </head>
 <body>
-<form  onsubmit="return validate()" action="welcome.html">
+<form  onsubmit="return validate();" action="welcome.html">
     <input id="uname" type="text" placeholder="username"/>
+    <label id="label1" style="color:red ; visibility: hidden">Invalid UserName</label>
     <br>
     <br>
     <input id="pass"  type="password" placeholder="password"/>
